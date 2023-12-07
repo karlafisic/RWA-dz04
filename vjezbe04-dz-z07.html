@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>Varijable</title>
+</head>
+<body>
+<script type="text/javascript">
+/*7. Napravite anonimnu funkciju i postavite je kao vrijednost varijable. Naša bi funkcija trebala raditi na ovaj način: 
+•	Ako je proslijeđen broj, vraća kvadrat tog broja;
+•	Inače vraća obavijest o pogrešci
+*/
+var broj=function(x)
+{
+   if(typeof(x)==='number')
+   {
+      return x*x;
+   }
+   else{
+   return "Pogreška. Niste unijeli broj. ";
+   }
+};
+var rezultat=broj(4);
+console.log("Kvadrat broja je: " + rezultat);
+document.write("Kvadrat broja je: " + rezultat);
+
+
+</script>
+</body>
+</html>

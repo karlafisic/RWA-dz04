@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>Varijable</title>
+</head>
+<body>
+<script type="text/javascript">
+var i=2;
+for(x=1; x<=1000; x++)
+{
+prost=true;
+for(i=2; i<x; i++)
+{
+if(x%i==0)
+{
+prost=false;
+}
+}
+if(prost==true)
+{
+document.write(x);
+document.write('</br>');
+console.log(x);
+}
+}
+
+</script>
+</body>
+</html>

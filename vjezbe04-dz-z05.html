@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>Varijable</title>
+</head>
+<body>
+<script type="text/javascript">
+var osoba1={firstName:"Marko", lastName:"Marić", age:40, eyeColor:"black"};
+var osoba2={firstName:"Iva", lastName:"Ivić", age:37, eyeColor:"brown"};
+var osoba3={firstName:"Anto", lastName:"Antić", age:52, eyeColor:"green"};
+var osoba4={firstName:"Ana", lastName:"Anić", age:32, eyeColor:"blue"};
+var osoba5={firstName:"Lovro", lastName:"Lovrić", age:43, eyeColor:"brown"};
+var ljudi=[osoba1, osoba2, osoba3, osoba4, osoba5];
+for(var i=0; i<ljudi.length; i++)
+{
+  document.write("</br>Indeks: ");
+  document.write(i+'</br>');
+  console.log("Indeks: ");
+  console.log(i);
+  document.write("Ime: ");
+  document.write(ljudi[i].firstName + '</br>');
+  console.log("Ime: ");
+  console.log(ljudi[i].firstName);
+  document.write("Prezime: ");
+  document.write(ljudi[i].lastName + '</br>');
+  console.log("Prezime: ");
+  console.log(ljudi[i].lastName);
+  document.write("Dob: ");
+  document.write(ljudi[i].age + '</br>');
+  console.log("Dob: ");
+  console.log(ljudi[i].age);
+  document.write("Boja očiju: ");
+  document.write(ljudi[i].eyeColor + '</br>');
+  console.log("Boja očiju: ");
+  console.log(ljudi[i].eyeColor);
+  document.write("--------------------------");
+  console.log("--------------------------");
+}
+document.write('</br>');
+</script>
+</body>
+</html>

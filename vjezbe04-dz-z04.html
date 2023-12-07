@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>Varijable</title>
+</head>
+<body>
+<script type="text/javascript">
+polje=new Array(1, 2, 3, 4, 7, 8, 5, 6, 9, 55, 12, 4, 85);
+/*a) Ispisati koliko je inicijalna dužina polja polje*/
+console.log (polje.length);
+document.write(polje.length);
+document.write('</br>');
+/*b) Ispisati polje ali sortirano s vrijednostima od najvećeg ka najmanjem*/
+for(var i=0; i < polje.length-1; i++)
+{
+for(var j=i+1; j < polje.length; j++)
+{
+  if(polje[i] < polje[j])
+  {
+    var pom=polje[i];
+	polje[i]=polje[j];
+	polje[j]=pom;
+  }
+}
+}
+document.write("Polje sortirano s vrijednostima od najvećeg prema najmanjem: </br>");
+console.log("Polje sortirano s vrijednostima od najvećeg prema najmanjem: </br>");
+for(var i=0; i < polje.length; i++)
+{
+document.write(polje[i]);
+document.write('</br>');
+console.log(polje[i]);
+}
+/*c) Ispisati polje ali  sortirano s vrijednostima od najmanjeg ka najvećem*/
+for(var i=0; i < polje.length-1; i++)
+{
+for(var j=i+1; j < polje.length; j++)
+{
+  if(polje[i] > polje[j])
+  {
+    var pom=polje[i];
+	polje[i]=polje[j];
+	polje[j]=pom;
+  }
+}
+}
+document.write("Polje sortirano s vrijednostima od najmanjeg prema najvećem: </br>");
+console.log("Polje sortirano s vrijednostima od najmanjeg prema najvećem: </br>");
+
+for (var i = 0; i < polje.length; i++)
+{
+  document.write(polje[i]);
+  document.write('</br>');
+  console.log(polje[i]);
+}
+
+/*d) U sortiranom polju iz c) ukloniti zadnji član polja*/
+polje.pop();
+document.write("Polje sortirano s vrijednostima od najmanjeg prema najvećem bez zadnjeg elementa: </br>");
+console.log("Polje sortirano s vrijednostima od najmanjeg prema najvećem bez zadnjeg elementa: </br>");
+
+for (var i = 0; i < polje.length; i++)
+{
+  document.write(polje[i]);
+  document.write('</br>');
+  console.log(polje[i]);
+}
+/*e) U polju iz d) dodati na kraj polja nova dva člana polja s vrijednostima 19 i 22*/
+polje.push(19, 22);
+document.write("Polje s novim članovima(19 i 22): </br>");
+console.log("Polje s novim članovima(19 i 22): </br>");
+for (var i = 0; i < polje.length; i++)
+{
+  document.write(polje[i]);
+  document.write('</br>');
+  console.log(polje[i]);
+}
+
+/*f) Definirajte novo polje polje2 s članovima "Banana", "Orange", "Apple", "Mango". 
+Nakon toga  spojite polje i polje2 u novo polje naziva polje_final i ispišite njegove vrijednosti, na proizvoljan način*/
+polje2=new Array('Banana', 'Orange', 'Apple', 'Mango');
+polje_final=polje2.concat(polje);
+document.write("Polje 2 i Polje spojeni u polje_final: </br>")
+document.write(polje_final);
+console.log("Polje 2 i Polje spojeni u polje_final: ")
+console.log(polje_final);
+</script>
+</body>
+</html>

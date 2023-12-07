@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<title>Varijable</title>
+</head>
+<body>
+<script type="text/javascript">
+function randombrojevi(a, b) {
+      for (var i = 0; i < 5; i++) {
+        var nekibroj = Math.floor(Math.random() * (b - a) + a);
+        console.log(nekibroj);
+		document.write(nekibroj + '</br>');
+      }
+    }
+randombrojevi(4, 10);
+
+</script>
+</body>
+</html>
